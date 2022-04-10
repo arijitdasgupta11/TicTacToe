@@ -151,14 +151,19 @@ nav ul li{
     transition: width 1s ease-in-out;
 }
 
+
 @media screen and (max-width: 950px)
 {
-    *{
-        background: url(background2.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    html{
+        background-image: url(background2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+    }
+
+    nav{
+        background-image: url(background2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     .gameContainer{
         flex-wrap: wrap;
@@ -182,13 +187,18 @@ nav ul li{
 
 @media screen and (max-width: 650px)
 {
-    *{
-        background: url(background2.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    html{
+        background-image: url(background2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
     }
+
+    nav{
+        background-image: url(background2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
     .info {
         font-size: 1.78rem;
         margin-left:1.8rem;
