@@ -145,7 +145,7 @@ nav ul li{
 .line{
     background-color: black;
     height: 4px;
-    width: 2px;
+    width: 0;
     position: absolute;
     background-color: #ff0b0b;
     transition: width 1s ease-in-out;
