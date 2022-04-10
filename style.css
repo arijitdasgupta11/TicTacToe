@@ -2,17 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: "Hurricane";
+}
+
+html{
     background: url(background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
 nav{
-  
-    background-color: rgb(37, 9, 37);
-   
+    background: url(background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 65px;
     font-size: 1.8rem;
     font-weight: bolder;
@@ -68,13 +72,14 @@ nav ul li{
 }
 
 .box:hover{
-    background-color: rgb(242, 234, 250);
+    background-color: rgba(255, 255, 255, 0.125);
 }
 
 .info {
     font-size: 1.9rem;
     margin-left: 6.5rem;
     color:white;
+    cursor: pointer;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -139,11 +144,10 @@ nav ul li{
 }
 .line{
     background-color: black;
-    color:#ffffff;
-    height: 3px;
-    width: 0;
+    height: 4px;
+    width: 2px;
     position: absolute;
-    background-color: #ffe207;
+    background-color: #ff0b0b;
     transition: width 1s ease-in-out;
 }
 
