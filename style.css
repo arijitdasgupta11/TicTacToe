@@ -2,27 +2,49 @@
     margin: 0;
     padding: 0;
     font-family: "Hurricane";
+    background: url(background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 nav{
+  
     background-color: rgb(37, 9, 37);
-    color: white;
+   
     height: 65px;
-    font-size: 27px;
+    font-size: 1.8rem;
+    font-weight: bolder;
     text-align: center;
     word-spacing: 7.555px;
     letter-spacing: 3.88px;
     padding:0 8px;
-    cursor: pointer;
     font-family: "Hurricane";
+    cursor: pointer;
 }
 
 nav ul{
     list-style-type: none;
 
 }
+nav ul li{
+    color:white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(173, 8, 255), 0 0 20px rgb(6, 23, 255), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #cc24ff, 0 0 70px #cc24ff;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(29, 59, 255), 0 0 30px #cc24ff, 0 0 40px #bf08f7, 0 0 50px #cc24ff, 0 0 60px #cc24ff, 0 0 70px #cc24ff, 0 0 80px #cc24ff;
+  }
+}
 .gameContainer{ 
+   
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -37,7 +59,7 @@ nav ul{
 }
 
 .box{
-    border: 3.88px solid black;
+    border: 3.88px solid rgb(255, 255, 255);
     font-size: 8vw;
     cursor: pointer;
     display: flex;
@@ -52,17 +74,29 @@ nav ul{
 .info {
     font-size: 1.9rem;
     margin-left: 6.5rem;
+    color:white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 30px rgb(173, 8, 255), 0 0 30px rgb(6, 23, 255), 0 0 50px rgb(6, 23, 255), 0 0 40px #e60073, 0 0 50px rgb(6, 23, 255), 0 0 80px #cc24ff, 0 0 90px #cc24ff;
+  }
+  to {
+    text-shadow: 0 0 30px rgb(29, 59, 255), 0 0 40px #cc24ff, 0 0 40px #bf08f7, 0 0 70px #cc24ff, 0 0 60px #cc24ff, 0 0 70px #cc24ff, 0 0 90px #cc24ff;
+  }
+}
+
+.boxtext
+{
+    color: #ffffff;
 }
 
 .gameInfo{
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
-}
-
- h1{
-    font-size: 3.5rem;
-    display: flex;
-    margin:2.4rem;
 }
 
 .imgbox img{
@@ -89,33 +123,48 @@ nav ul{
 #reset {
     margin: 0 23px;
     padding: 1px 18px;
-    background: #f3e7f9;
+    background: #ffffff;
+    color:#bf08f7;
     border-radius: 6px;
     cursor: pointer;
-    font-family: 'Baloo Bhaina 2';
+    font-family:"Hurricane";
     font-size: 15px;
     font-weight: bolder;
+    transition: 0.4s;
 }
 
+#reset:hover{
+    color: #ffffff;
+    background :#162dface;
+}
 .line{
     background-color: black;
+    color:#ffffff;
     height: 3px;
     width: 0;
     position: absolute;
-    background-color: #911d91;
+    background-color: #ffe207;
     transition: width 1s ease-in-out;
 }
 
 @media screen and (max-width: 950px)
 {
+    *{
+        background: url(background2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
     .gameContainer{
         flex-wrap: wrap;
     }
     .gameInfo{
         margin-top: 34px;
-    }
-    h1{
-        font-size: 1.9rem;
+    } 
+    .info {
+        font-size: 2.8rem;
+        margin-left:1.5rem;
     }
     .container { 
         grid-template-rows: repeat(3, 20vw);
@@ -129,13 +178,16 @@ nav ul{
 
 @media screen and (max-width: 650px)
 {
-    h1{
-        font-size: 1.25rem;
+    *{
+        background: url(background2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
-
     .info {
-        font-size: 1.25rem;
-        margin-left:1.5rem;
+        font-size: 1.78rem;
+        margin-left:1.8rem;
     }
 #reset{
     margin: 8px 23px;
